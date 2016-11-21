@@ -1,8 +1,8 @@
 @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
 
-    REM setting SSL cert-start
+    ECHO setting SSL cert-start
     set SSL_CERT_FILE=cacert.cer
-    REM setting SSL cert-end
+    ECHO setting SSL cert-end
 
     REM Put Ruby in Path
     REM You can also use %TEMP% but it is cleared on site restart. Tools is persistent.

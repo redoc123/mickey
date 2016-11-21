@@ -44,9 +44,9 @@
 
     call :ExecuteCmd "getruby.cmd"
 
-    REM install npm package stuff
+    ECHO NPM INSTALL - START
     npm install
-    REM installed npm package stuff
+    ECHO NPM INSTALL - END
 
     ECHO WE MADE IT
 
