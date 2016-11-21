@@ -44,6 +44,10 @@
 
     call :ExecuteCmd "getruby.cmd"
 
+    REM install npm package stuff
+    npm install
+    REM installed npm package stuff
+
     ECHO WE MADE IT
 
     :: Deployment
@@ -56,7 +60,7 @@
       IF !ERRORLEVEL! NEQ 0 goto error
     )
 
-    
+
     :: Post deployment stub
     IF DEFINED POST_DEPLOYMENT_ACTION call "%POST_DEPLOYMENT_ACTION%"
     IF !ERRORLEVEL! NEQ 0 goto error
